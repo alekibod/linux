@@ -34,7 +34,7 @@ install_chromium() {
             -p 3000:3000 \
             -p 3001:3001 \
             -v /path/to/config:/config \
-            --shm-size="1gb" \
+            --shm-size="2gb" \
             --restart unless-stopped \
             lscr.io/linuxserver/chromium:latest
         echo "------------------------------------------------------------------------------------------------"
@@ -77,7 +77,7 @@ install_firefox() {
             -p 4000:3000 \
             -p 4001:3001 \
             -v /path/to/config:/config \
-            --shm-size="1gb" \
+            --shm-size="2gb" \
             --restart unless-stopped \
             lscr.io/linuxserver/firefox:latest
         echo "------------------------------------------------------------------------------------------------"
